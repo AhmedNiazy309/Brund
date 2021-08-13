@@ -487,13 +487,13 @@
     }
     
     .contact .col-md-6:nth-child(2) {
-        padding-top: 5%;
+        padding-top: 2%;
         text-align: right;
     }
     
     .contact input[type="email"] {
         height: 45px;
-        width: 70%;
+        width: 50%;
         display: inline
     }
     
@@ -508,10 +508,13 @@
     .contact input[type="submit"] {
         position: relative;
         right: 15%;
+        background-color: #23A6F0;
+        border: none;
+        padding: 0 7%;
     }
     
     .contact input {
-        height: 45px;
+        height: 50px !important;
     }
     
     footer {
@@ -600,3 +603,17 @@
         font-size: 17px;
         font-weight: 500;
     }
+    
+    @media (max-width: 558px) {
+        .contact input[type="submit"] {
+            position: relative;
+            right: 0;
+            background: #23A6F0;
+            border: none;
+            padding: 0 7%;
+            bottom: 50px;
+            left: 41%;
+        }
+    }
+    
+    .contact .w-100 {}
